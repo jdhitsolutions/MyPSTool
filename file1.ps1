@@ -1,1 +1,4 @@
-Get-Process | sort VM -desc | select -first 10
+
+Get-Process | 
+sort-object -property VM -descending | 
+select-object -first 10
